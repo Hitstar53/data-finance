@@ -25,7 +25,7 @@ const Navbar = () => {
         <li className='p-4'>About</li>
         <li className='p-4'>Contact</li>
       </ul>
-      <button className='text-black bg-[#00df9a] hover:bg-white duration-200 w-[200px] rounded-md font-medium mx-auto px-4 py-2'>Sign In</button>
+      <button className='hidden md:block text-black bg-[#00df9a] hover:bg-white duration-200 w-[200px] rounded-md font-medium mx-auto px-4 py-2'>Sign In</button>
       <div className='block md:hidden'>
         {isOpen ? (
           <AiOutlineClose size={20} onClick={toggle} />
@@ -41,7 +41,8 @@ const Navbar = () => {
           <li className='p-4 border-b border-gray-600'>Company</li>
           <li className='p-4 border-b border-gray-600'>Resources</li>
           <li className='p-4 border-b border-gray-600'>About</li>
-          <li className='p-4'>Contact</li>
+          <li className='p-4 border-b border-gray-600'>Contact</li>
+          <li className='p-4'>Sign In</li>
         </ul>
       </div>
     </div>
